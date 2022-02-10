@@ -1,4 +1,5 @@
 var color = require('./modules/color.js');
+var prompt = require('./modules/prompt.js');
 exports.log = function (text) {
     console.log(color.colorize('gray', " » " + text));
   };
@@ -14,3 +15,6 @@ exports.warn = function (text) {
 exports.info = function (text) {
     console.log(color.colorize('blue', " ℹ " + text));
 }
+exports.wait = function () {
+}
+// ⇨ 
