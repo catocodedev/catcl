@@ -1,4 +1,5 @@
 var catcl = require('../src/main.js');
+
 catcl.log('Log');
 catcl.success('Success');
 catcl.warn('Warn');

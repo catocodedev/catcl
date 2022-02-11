@@ -3,23 +3,25 @@ var cursor = require('./cursor.js');
 var tools = require('./tools.js');
 exports.loading = async function (time, text) {
 var txt = text || "";
-var time = time || 1;
+cursor.hide();
     for (time > 0; time--;) {
         console.log(color.colorize('cyan', "↻ " + txt));
-        await tools.sleep(100);
         cursor.move_up(1)
+        await tools.sleep(10);
         console.log(color.colorize('cyan', "⟳ " + txt));
-        await tools.sleep(100);
         cursor.move_up(1)
+        await tools.sleep(10);
         console.log(color.colorize('cyan', "⤸ " + txt));
-        await tools.sleep(100);
         cursor.move_up(1)
+        await tools.sleep(10);
         console.log(color.colorize('cyan', "⤾ " + txt));
-        await tools.sleep(100);
         cursor.move_up(1)
+        await tools.sleep(10);
         console.log(color.colorize('cyan', "↻ " + txt));
         cursor.move_up(1)
+        await tools.sleep(10);
     }
     console.log(color.colorize('cyan', "◯  " + txt));
+    cursor.show();
     await time < 1;
 }

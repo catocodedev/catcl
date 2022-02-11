@@ -36,4 +36,10 @@ exports.cursor_left = function (lines) {
 exports.cursor_right = function (lines) {
     cursor.move_right(lines);
 }
+exports.cursor_hide = function () {
+    cursor.hide();
+}
+exports.cursor_show = function () {
+    cursor.show();
+}
 // ⇨ 

@@ -27,3 +27,9 @@ exports.move_left = function (amount) {
         }
       }
 }
+exports.hide = function () {
+    stdout.write('\033[?25l');
+}
+exports.show = function () {
+    stdout.write('\033[?25h');
+}
