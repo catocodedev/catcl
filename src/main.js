@@ -4,7 +4,7 @@ var aminmation = require('./modules/animations.js');
 var cursor = require('./modules/cursor.js');
 var tools = require('./modules/tools.js');
 exports.log = function (text) {
-    console.log(color.colorize('gray', " » " + text));
+    console.log(color.colorize('gray', "» " + text));
   };
 exports.error = function (text) {
     console.log(color.colorize('red', "ⓧ  " + text));
@@ -16,7 +16,7 @@ exports.warn = function (text) {
     console.log(color.colorize('yellow', "⚠  " + text));
 }
 exports.info = function (text) {
-    console.log(color.colorize('blue', " ℹ " + text));
+    console.log(color.colorize('blue', "🛈  " + text));
 }
 exports.sleep = async function (ms) {
   await tools.sleep(ms);
