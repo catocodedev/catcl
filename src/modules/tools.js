@@ -3,3 +3,7 @@ exports.sleep = async function (ms) {
       setTimeout(resolve, ms);
     });
   }
+exports.clear = function (){
+  console.log("\033[2J")
+  console.log("\033[H")
+}

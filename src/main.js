@@ -21,9 +21,12 @@ exports.info = function (text) {
 exports.sleep = async function (ms) {
   await tools.sleep(ms);
 }
-exports.loading = async function (waiting,text) {
-  await aminmation.loading(waiting,text);
+exports.loading_while = async function (waiting,text) {
+  await aminmation.loading_while(waiting,text);
 }
+exports.loading_time = async function (waiting,text) {
+    await aminmation.loading_time(waiting,text);
+  }
 exports.cursor_up = function (lines) {
     cursor.move_up(lines);
 }
@@ -41,5 +44,8 @@ exports.cursor_hide = function () {
 }
 exports.cursor_show = function () {
     cursor.show();
+}
+exports.clear = function (){
+    tools.clear();
 }
 // ⇨ 
