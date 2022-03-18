@@ -6,22 +6,22 @@ return new Promise((resolve) => {
 var txt = text || "";
 cursor.hide();
     while (condition) {
-        console.log(color.colorize('cyan', "↻ " + txt));
+        console.log(color.colorize('blue', "↻ " + txt));
         cursor.move_up(1)
         setTimeout(function(){}, 100);
-        console.log(color.colorize('cyan', "⟳ " + txt));
+        console.log(color.colorize('blue', "⟳ " + txt));
         cursor.move_up(1)
         setTimeout(function(){}, 100);
-        console.log(color.colorize('cyan', "⤸ " + txt));
+        console.log(color.colorize('blue', "⤸ " + txt));
         cursor.move_up(1)
         setTimeout(function(){}, 100);
-        console.log(color.colorize('cyan', "⤾ " + txt));
+        console.log(color.colorize('blue', "⤾ " + txt));
         cursor.move_up(1)
         setTimeout(function(){}, 100);
-        console.log(color.colorize('cyan', "↻ " + txt));
+        console.log(color.colorize('blue', "↻ " + txt));
         cursor.move_up(1)
     }
-    console.log(color.colorize('cyan', "◯  " + txt));
+    console.log(color.colorize('blue', "◯  " + txt));
     cursor.show();
     resolve()
 })

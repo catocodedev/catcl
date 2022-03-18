@@ -48,4 +48,7 @@ exports.cursor_show = function () {
 exports.clear = function (){
     tools.clear();
 }
+exports.wait = async function (text) {
+    return await prompt.wait(text);
+}
 // ⇨ 
